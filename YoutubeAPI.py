@@ -4,9 +4,10 @@ import database
 import schedule
 import time 
 from threading import Thread
+import config
 
-key = 'AIzaSyCiTiATyASdb37KBe5TrTzISg8bD329Hf4'
-header =  {'Authorization': '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'}
+key = config.api_key
+header =  {'Authorization': config.access_token}
 i =0
 defQuery = "Game"
 countDump =0
